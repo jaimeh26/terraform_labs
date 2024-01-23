@@ -8,7 +8,7 @@ terraform{
     cloud {
         organization = "jaimeh26"
       workspaces {
-        name = "terraform_labs"
+        name = "terraform_aws"
       }
     }
 
