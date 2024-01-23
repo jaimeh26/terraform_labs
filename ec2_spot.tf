@@ -1,25 +1,10 @@
-data "aws_ami" "spotmcit" {
-  most_recent = true
-  owners      = ["amazon"]
-  filter {
-    name   = "architecture"
-    values = ["arm64"]
-  }
-  filter {
-    name   = "name"
-    values = ["al2023-ami-2023*"]
-  }
-}
-
-resource "aws_instance" "spotmcit" {
-  ami = data.aws_ami.spotmcit.id
-  instance_market_options {
-    spot_options {
-      max_price = 0.0031
-    }
-  }
-  instance_type = "t4g.nano"
+# Request a spot instance at $0.03
+resource "aws_spot_instance_request" "spotmcit" {
+  ami           = "ami-1234"
+  spot_price    = "0.03"
+  instance_type = "c4.xlarge"
+ 
   tags = {
-    Name = "test-spot"
+    Name = "spotmcit"
   }
 }
