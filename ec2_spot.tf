@@ -13,8 +13,7 @@ data "aws_ami" "spotmcit" {
 
 resource "aws_instance" "spotmcit" {
   ami = data.aws_ami.spotmcit.id
-  instance_market_options {
-    spot_options {
+      spot_options {
       max_price = 0.0031
     }
   }
@@ -22,4 +21,4 @@ resource "aws_instance" "spotmcit" {
   tags = {
     Name = "test-spot"
   }
-}
+
