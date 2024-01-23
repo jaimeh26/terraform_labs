@@ -18,6 +18,7 @@ resource "aws_instance" "spotmcit" {
       max_price = 0.0031
     }
   }
+  }
   instance_type = "t4g.nano"
   tags = {
     Name = "test-spot"
