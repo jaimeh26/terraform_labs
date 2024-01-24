@@ -38,3 +38,8 @@ variable "vpc_create_database_subnet_route_table" {
   type        = bool
   default     = false  
 }
+variable "vpc_single_nat_gateway" {
+  description = "Flag to use a single NAT gateway"
+  type        = bool
+  default     = false  
+}
