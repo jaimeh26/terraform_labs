@@ -12,3 +12,9 @@ variable "instance_type"{
     type =string
     default="t3.micro"
 }
+
+variable "vpc_create_database_subnet_group" {
+  description = "Flag to create a database subnet group"
+  type        = bool
+  default     = false  
+}
