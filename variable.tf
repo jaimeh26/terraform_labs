@@ -33,3 +33,8 @@ variable "vpc_availability_zones" {
   type        = list(string)  
   default     = ["us-east-1", "us-east-2"]  
 }
+variable "vpc_create_database_subnet_route_table" {
+  description = "Flag to create a route table for database subnets"
+  type        = bool
+  default     = false  
+}
