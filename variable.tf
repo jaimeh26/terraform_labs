@@ -28,3 +28,8 @@ variable "vpc_private_subnets" {
   type        = list(string)  
   default     = ["10.10.0.0/16", "10.20.0.0/16"]  # Set the default value based on your requirements
 }
+variable "vpc_availability_zones" {
+  description = "List of availability zones for the VPC"
+  type        = list(string)  
+  default     = ["us-east-1", "us-east-2"]  
+}
