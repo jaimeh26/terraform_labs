@@ -48,3 +48,8 @@ variable "vpc_public_subnets" {
   type        = list(string)  # Update the type based on your subnet format
   default     = []  
 }
+variable "vpc_enable_nat_gateway" {
+  description = "Flag to enable NAT gateway for outbound communication"
+  type        = bool
+  default     = false  
+}
