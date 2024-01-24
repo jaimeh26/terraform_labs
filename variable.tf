@@ -43,3 +43,8 @@ variable "vpc_single_nat_gateway" {
   type        = bool
   default     = false  
 }
+variable "vpc_public_subnets" {
+  description = "List of public subnets"
+  type        = list(string)  # Update the type based on your subnet format
+  default     = []  
+}
