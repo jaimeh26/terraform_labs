@@ -5,3 +5,6 @@ locals {
     # Add any other common tags as needed
   }
 }
+locals {
+  name = "mcitcloud2_vpc"  
+}
