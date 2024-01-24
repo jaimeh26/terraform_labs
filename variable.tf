@@ -53,3 +53,8 @@ variable "vpc_enable_nat_gateway" {
   type        = bool
   default     = false  
 }
+variable "vpc_database_subnets" {
+  description = "List of database subnets"
+  type        = list(string)  # Update the type based on your subnet format
+  default     = []  
+}
