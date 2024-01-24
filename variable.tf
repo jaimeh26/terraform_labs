@@ -23,3 +23,8 @@ variable "vpc_cidr_block" {
   type        = string  
   default     = "10.0.0.0/16"  
 }
+variable "vpc_private_subnets" {
+  description = "List of private subnets"
+  type        = list(string)  
+  default     = ["10.10.0.0/16" "10.20.0.0/16"]  # Set the default value based on your requirements
+}
