@@ -4,7 +4,7 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  instance_type          = "t2.micro"
+  instance_type          = var.instance_type
   key_name               = "user1"
   monitoring             = true
   vpc_security_group_ids = ["sg-12345678"]
