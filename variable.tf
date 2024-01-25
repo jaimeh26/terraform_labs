@@ -58,3 +58,8 @@ variable "vpc_database_subnets" {
   type        = list(string)  # Update the type based on your subnet format
   default     = []  
 }
+variable "vpc_name" {
+  description = "Name for the VPC"
+  type        = string  # Update the type based on your naming convention
+  default     = "example-vpc"  
+}
