@@ -63,7 +63,4 @@ variable "vpc_name" {
   type        = string  # Update the type based on your naming convention
   default     = "mcitcloud2_vpc"  
 }
-variable "instance_type" { 
-  type        = string
-  default     = t2.micro
-}
+
