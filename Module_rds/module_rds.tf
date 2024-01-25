@@ -1,5 +1,5 @@
 module "rds" {
-  source = "./Module_rds/"
+  source = "terraform-aws-modules/rds/aws"
   version = "~> 2.0"
 
   identifier = "mydb"
