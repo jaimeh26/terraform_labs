@@ -1,6 +1,6 @@
 # Create AWS RDS Database
 Module "rds" {
-  source  = "terraform-aws-modules/rds/aws"
+  source  = "./Module_rds/"
   #version = "2.34.0"
   version = "3.0.0"
   identifier = var.db_instance_identifier
