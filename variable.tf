@@ -61,5 +61,5 @@ variable "vpc_database_subnets" {
 variable "vpc_name" {
   description = "Name for the VPC"
   type        = string  # Update the type based on your naming convention
-  default     = "example-vpc"  
+  default     = "mcitcloud2_vpc"  
 }
